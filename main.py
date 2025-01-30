@@ -3,75 +3,72 @@ from tinydb import TinyDB, Query
 # Create or connect to the database
 db = TinyDB('students.json',indent=4)
 
-students=[
+new_students=[
     {
-    "id": 1,
-    "name": "Shoxrux",
-    "age": 19,
+    "id": 4,
+    "name": "Azizbek",
+    "age": 20,
     "gender": "Male",
-    "contact": "940500320",
-    "grade_level": "2005",
+    "contact": "941232277",
+    "grade_level": "2004",
     "subjects": {
-        "math": 85,
-        "physics": 90,
-        "english": 88
+        "math": 95,
+        "science": 95,
+        "english": 90
     },
-    "attendance": 90,
-    "activities": ["english course","programming course","Football", "Volleyball"],
+    "attendance": 98,
+    "activities": ["Basketball", "English Course"],
     "address": {
-        "street": "Bag'dod St",
+        "street": "Baghdad St",
         "city": "Samarkand",
         "state": "Uzbekistan",
-        "zip_code": "140100"
+        "zip_code": "1040100"
     }
-
-},
-    {
-    "id": 2,
-    "name": "Abdumajid",
-    "age": 18,
-    "gender": "Male",
-    "contact": "941252409",
-    "grade_level": "2005",
-    "subjects": {
-        "math": 90,
-        "biology": 90,
-        "english": 88
-    },
-    "attendance": 95,
-    "activities": ["english course","programming course","Football"],
-    "address": {
-        "street": "Amir Temur St",
-        "city": "Samarkand",
-        "state": "Uzbekistan",
-        "zip_code": "140100"
-    }
-
     },
     {
-    "id": 3,
-    "name": "Mehrojiddin",
-    "age": 19,
-    "gender": "Male",
-    "contact": "947077005",
-    "grade_level": "2005",
-    "subjects": {
-        "math": 85,
-        "history": 90,
-        "english": 95
+        "id": 5,
+        "name": "Asilbek",
+        "age": 19,
+        "gender": "Male",
+        "contact": "940401520",
+        "grade_level": "2005",
+        "subjects": {
+            "math": 90,
+            "science": 85,
+            "english": 90
+        },
+        "attendance": 95,
+        "activities": ["Basketball", "English Course","Football"],
+        "address": {
+            "street": "Baghdad St",
+            "city": "Samarkand",
+            "state": "Uzbekistan",
+            "zip_code": "1040100"
+        }
     },
-    "attendance": 85,
-    "activities": ["english course","programming course","Football", "Volleyball"],
-    "address": {
-        "street": "Motrid St",
-        "city": "Samarkand",
-        "state": "Uzbekistan",
-        "zip_code": "140100"
+    {
+        "id": 6,
+        "name": "Shahzobbek",
+        "age": 21,
+        "gender": "Male",
+        "contact": "940016556",
+        "grade_level": "2003",
+        "subjects": {
+            "math": 85,
+            "science": 90,
+            "english": 95
+        },
+        "attendance": 90,
+        "activities": ["Basketball", "English Course","Volleyball"],
+        "address": {
+            "street": "Amir Temur St",
+            "city": "Samarkand",
+            "state": "Uzbekistan",
+            "zip_code": "1040100"
+        }
     }
-
-}
-]
-db.insert_multiple(students)
+    ]
+db.insert_multiple(new_students)
 # Reference the default table
 # students_table = db.table("_default")
 # print(students_table.all())
