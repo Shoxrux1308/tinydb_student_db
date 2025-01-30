@@ -71,7 +71,7 @@ students=[
 
 }
 ]
-# db.insert_multiple(students)
+db.insert_multiple(students)
 # Reference the default table
-students_table = db.table("_default")
-print(students_table.all())
+# students_table = db.table("_default")
+# print(students_table.all())
